@@ -188,7 +188,7 @@ def print_report(categories_files_groups):
             file_names = [os.path.split(f)[1] for f in files]
             print(" - " + "\n - ".join(file_names))
 
-if  __name__ == "__main__" :
+def main():
     folder_path = os.path.join(os.path.expanduser("~"), "Desktop", "Мотлох")
     folder_dest = folder_path
     if len(sys.argv) > 2:
@@ -201,3 +201,8 @@ if  __name__ == "__main__" :
     print("Start")
     categories_files_groups, is_all_subfolders_empty = organize_files_by_cathegory(folder_path, folder_dest, organize_archives=False)
     print_report(categories_files_groups)
+    return 0
+    
+if  __name__ == "__main__" :
+    sys.exit(main())
+    
