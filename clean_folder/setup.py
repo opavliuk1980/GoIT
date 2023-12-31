@@ -8,5 +8,5 @@ setup(name='clean_folder',
       author_email='opawlyuk@gmail.com',
       license='MIT',
       packages=find_namespace_packages(),
-      entry_points={'console_scripts': ['clean = clean_folder.clean:main']}
+      entry_points={'console_scripts': ['clean-folder = clean_folder.clean:main']}
       )
